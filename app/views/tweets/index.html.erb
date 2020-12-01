@@ -1,0 +1,8 @@
+<div class="contents row">
+    <% @tweets.each do |tweet| %>
+        <span class="name"><%= tweet.name %></span>
+          <div class="text">
+            <%= simple_format(tweet.text) %>
+          </div>
+    <% end %>
+</div>

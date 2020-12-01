@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nter</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header_top">Nter</h1>
+        <div class="user_nav">
+          <a class="post" href="/tweets/new">コメントする</a> 
+        </div>
+    </header>
+    <%= yield %>
+  </body>
+</html>

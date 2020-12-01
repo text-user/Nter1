@@ -1,0 +1,54 @@
+ body, html {
+    height: 100px;
+}
+
+.header_top {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px auto 0;
+    letter-spacing: 1px;
+}
+
+body {
+  padding-top: 15px;
+}
+
+.post {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: red;
+    border-radius: 5px;
+    margin-left: 1000px;
+    padding: 3px;
+    
+}
+
+.contents {
+    width: 1000px;
+    margin: 8px auto 0 ;
+}
+
+.name {
+    font-weight: bold;
+    line-height: 40px;
+    margin: 10px 0 0 10px;
+}
+
+.text {
+    background-color: pink;
+    height: 100px;
+}
+
+.form-group {
+    margin: 12px 0;
+}
+
+.success {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
