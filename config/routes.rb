@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
     root 'tweets#index'
-    get 'tweets'     =>  'tweets#index'  #一覧表示
-    get 'tweets/new'  => 'tweets#new' #投稿画面
-    post 'tweets'     => 'tweets#create' #投稿後画面
+    get   'tweets'     =>  'tweets#index'  #一覧表示
+    get   'tweets/new' => 'tweets#new' #投稿画面
+    post  'tweets'     => 'tweets#create' #投稿後画面
 end

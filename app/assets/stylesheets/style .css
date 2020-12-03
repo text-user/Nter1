@@ -1,5 +1,6 @@
  body, html {
     height: 100px;
+    background-color: #FFFFDD;
 }
 
 .header_top {
@@ -36,8 +37,9 @@ body {
 }
 
 .text {
-    background-color: pink;
+    background-color: white;
     height: 100px;
+    border: solid 3px #DDDDDD;
 }
 
 .form-group {
