@@ -1,17 +1,23 @@
  body, html {
     height: 100px;
-    background-color: #FFFFDD;
+    background-color:#DDDDDD ;
 }
 
 .header_top {
     font-weight: bold;
-    font-size: 30px;
-    margin: 5px auto 0;
+    font-size: 40px;
     letter-spacing: 1px;
+    background-color: white;
+    border: 3px solid #F5F5F5;
 }
 
 body {
-  padding-top: 15px;
+  padding-top: 20px;
+}
+
+.header_top_user {
+    margin-top: 10px;
+    margin-left: 900px;
 }
 
 .post {
@@ -20,26 +26,47 @@ body {
     font-size: 20px;
     background-color: red;
     border-radius: 5px;
-    margin-left: 1000px;
-    padding: 3px;
-    
+    margin: 0 5px;
+    padding: 3px 5px;
+}
+input {
+    width: 1000px;
+    margin: 30px 0 15px 200px ;
 }
 
-.contents {
+textarea {
     width: 1000px;
-    margin: 8px auto 0 ;
+    height: 200px;
+    margin: 0 0 0 200px;;
+}
+
+.text_top {
+    display: flex;
 }
 
 .name {
     font-weight: bold;
-    line-height: 40px;
-    margin: 10px 0 0 10px;
+    font-size: 20px;
+    margin-left: 215px;
+    
+}
+
+.name.name_destroy {
+    display: block;
+    width: 40px;
+    height: 25px;
+    border-style: solid;
+    border-color: blue;
+    margin-top: 10px;
+    
 }
 
 .text {
     background-color: white;
+    border: solid 3px #888888;
     height: 100px;
-    border: solid 3px #DDDDDD;
+    width: 1000px;
+    margin: 15px auto 0;   
 }
 
 .form-group {
@@ -52,11 +79,14 @@ body {
 
 h1 {
     text-align: center;
-    font-weight: bold;
+    font-size: 25px;
+    margin: 10px auto;
+    padding: 10px 0;
 }
 
-a.btn {
-    display: inline-block;
-    margin: 100px auto 0px;
-    font-size: 17px;
+.btn {
+    display: block;
+    margin: 70px auto ;
+    font-size: 20px;
+    width: 120px;
 }

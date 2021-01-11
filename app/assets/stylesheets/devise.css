@@ -1,20 +1,24 @@
 .devise-title {
-    position: absolute;
-    left: 315px;
-    top: 120px;
-    color: red;
-    font-size: 160%;
-}
-.field {    
-    margin: 100px;
-}
-
-.actions {
     text-align: center;
+    font-size: 30px;
+    border-style: groove;
+    margin: 30px 0;
     
 }
 
+.field {    
+    
+    padding:10px 20px;
+    margin:0 auto;
+}
+
+.actions {
+    margin:0 0 0 20px;
+    padding: 25px 0px;
+}
+
 .link {
-    text-align: center;
-    margin: 20px 0;
+    text-align:center;
+    padding: 15px 0;
+    
 }

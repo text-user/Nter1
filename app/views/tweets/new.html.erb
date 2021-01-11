@@ -1,16 +1,12 @@
 <div class="contents row">
   <%= form_tag('/tweets' , method: :post) do %>
-    <h3>
-      投稿する
-    </h3>
   <div class="form-group">
-    <input type="text" name="name" placeholder="name" style="width: 100%; height:50px;" >
   </div>
   <div class="form-group">
-    <textarea name ="text" name="text" placeholder="text" cols="25" rows="5" style="width: 100%;" ></textarea>
+    <textarea name ="text" name="text" placeholder="text" cols="25" rows="5" ></textarea>
   </div>
   <div class="form-group">
-    <input type="submit" value="SEND" style="width: 100%;" >
+    <input type="submit" value="SEND">
   </div>  
   <% end %>
 </div>

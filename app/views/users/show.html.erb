@@ -1,9 +1,19 @@
 <div class="contents row">
-  <p><%= @nickname %>さんの投稿一覧</p>
+  <h1><%= @nickname %>さんの投稿一覧</h1>
+  <a class="btn" href="/tweets">一覧表へ戻る</a>
   <% @tweets.each do |tweet| %>
-    <span class="name"><%= tweet.name %></span>
-    <div class="text">
-      <%= simple_format(tweet.text) %>
-    </div>
+    <% if signed_in? && current_user.id == tweet.user_id %>
+    <div class="text_top"> 
+      <div class="name">
+        <%= tweet.user.nickname %>
+      </div>
+      <div class="name name_destroy">
+        <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
+      </div>
+    </div> 
+      <div class="text">
+        <%= simple_format(tweet.text) %>
+      </div>
+    <% end %>
   <% end %>
 </div>
